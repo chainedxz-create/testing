@@ -1,0 +1,37 @@
+<button id="openTabButton">Open Fullscreen</button>
+
+<style>
+  button {
+    padding: 10px 50px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+
+  button:hover {
+    background-color: #0056b3;
+  }
+</style>
+
+<script>
+async function openTab() {
+    const url = "example.com"; // Replace with your CDN URL
+    const response = await fetch(url);
+    const html = await response.text();
+
+    const newTab = window.open("about:blank", "_blank");
+    if (newTab) {
+        newTab.document.open();
+        newTab.document.write(html);
+        newTab.document.close();
+    } else {
+        alert("Popup blocked! Allow popups for this site.");
+    }
+}
+
+document.getElementById("openTabButton").addEventListener("click", openTab);
+</script>
