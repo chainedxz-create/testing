@@ -1,0 +1,1 @@
+the misc folder is for webgl games not made with unity. Mostly gamemaker games. Will not include godot games
