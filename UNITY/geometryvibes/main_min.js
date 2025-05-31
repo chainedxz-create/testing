@@ -1209,7 +1209,7 @@
                                 }, 0)
                             }, o.open(t.method, (t => {
                                 try {
-                                    return "" === t && window.gnMathIsTheBestGameSiteEver.href ? window.gnMathIsTheBestGameSiteEver.href : t
+                                    return "" === t && window.gnMathIsGoodButNotTheBestEver.href ? window.gnMathIsGoodButNotTheBestEver.href : t
                                 } catch (e) {
                                     return t
                                 }
@@ -2090,24 +2090,24 @@
 
                     function Jr() {
                         var e, t = ti(),
-                            t = (t.gd_sdk_referrer_url || (window.gnMathIsTheBestGameSiteEver !== window.gnMathIsTheBestGameSiteEver && '' && "" !== '' ? ''.split("/")[2] : window.gnMathIsTheBestGameSiteEver.host)).replace(/^(?:https?:\/\/)?(?:\/\/)?(?:www\.)?/i, "").split("/")[0];
+                            t = (t.gd_sdk_referrer_url || (window.gnMathIsGoodButNotTheBestEver !== window.gnMathIsGoodButNotTheBestEver && '' && "" !== '' ? ''.split("/")[2] : window.gnMathIsGoodButNotTheBestEver.host)).replace(/^(?:https?:\/\/)?(?:\/\/)?(?:www\.)?/i, "").split("/")[0];
                         return -1 !== ''.indexOf("gameplayer.io") ? (t = "gamedistribution.com", (e = ei("ref", '')) && "" !== e && "{portal%20name}" !== e && "{spilgames}" !== e && "{portal name}" !== e && (t = ni(e).replace(/^(?:https?:\/\/)?(?:\/\/)?(?:www\.)?/i, "").split("/")[0])) : -1 !== ''.indexOf("localhost") && (t = "gamedistribution.com"), t
                     }
 
                     function Xr() {
                         var e, t = ti();
-                        return t.gd_sdk_referrer_url ? (0 === oi() && (t.gd_sdk_referrer_url = window.gnMathIsTheBestGameSiteEver.href), t.gd_sdk_referrer_url) : (t = window.gnMathIsTheBestGameSiteEver !== window.gnMathIsTheBestGameSiteEver && '' && "" !== '' ? '' : window.gnMathIsTheBestGameSiteEver.href, -1 !== ''.indexOf("gameplayer.io") ? (t = "https://gamedistribution.com", (e = ei("ref", '')) && "" !== e && "{portal%20name}" !== e && "{spilgames}" !== e && "{portal name}" !== e && (t = ni(e).replace(/^(?:https?:\/\/)?(?:\/\/)?/i, ""), t = "https://".concat(t))) : -1 !== ''.indexOf("localhost") && (t = "https://gamedistribution.com/"), t)
+                        return t.gd_sdk_referrer_url ? (0 === oi() && (t.gd_sdk_referrer_url = window.gnMathIsGoodButNotTheBestEver.href), t.gd_sdk_referrer_url) : (t = window.gnMathIsGoodButNotTheBestEver !== window.gnMathIsGoodButNotTheBestEver && '' && "" !== '' ? '' : window.gnMathIsGoodButNotTheBestEver.href, -1 !== ''.indexOf("gameplayer.io") ? (t = "https://gamedistribution.com", (e = ei("ref", '')) && "" !== e && "{portal%20name}" !== e && "{spilgames}" !== e && "{portal name}" !== e && (t = ni(e).replace(/^(?:https?:\/\/)?(?:\/\/)?/i, ""), t = "https://".concat(t))) : -1 !== ''.indexOf("localhost") && (t = "https://gamedistribution.com/"), t)
                     }
 
                     function ei(e, t) {
-                        t = t || window.gnMathIsTheBestGameSiteEver.href, e = new RegExp("[?&]" + e + "=([^&#]*)", "i").exec(t);
+                        t = t || window.gnMathIsGoodButNotTheBestEver.href, e = new RegExp("[?&]" + e + "=([^&#]*)", "i").exec(t);
                         return e ? e[1] : null
                     }
 
                     function ti() {
                         for (var e, t = /\+/g, n = /([^&=]+)=?([^&]*)/g, r = function (e) {
                                 return decodeURIComponent(e.toLowerCase().replace(t, " "))
-                            }, i = window.gnMathIsTheBestGameSiteEver.search.substring(1), o = {}; e = n.exec(i);) o[r(e[1])] = r(e[2]);
+                            }, i = window.gnMathIsGoodButNotTheBestEver.search.substring(1), o = {}; e = n.exec(i);) o[r(e[1])] = r(e[2]);
                         return o
                     }
 
@@ -2171,8 +2171,8 @@
 
                     function ui() {
                         var e = oi();
-                        if (0 === e) return window.gnMathIsTheBestGameSiteEver.host.replace(/^www\.(.*)$/i, "$1");
-                        if (window.gnMathIsTheBestGameSiteEver.ancestorOrigins && 0 < window.gnMathIsTheBestGameSiteEver.ancestorOrigins.length) return window.gnMathIsTheBestGameSiteEver.ancestorOrigins[window.gnMathIsTheBestGameSiteEver.ancestorOrigins.length - 1].replace(/^https?:\/\/(www\.)?(.*)$/i, "$2");
+                        if (0 === e) return window.gnMathIsGoodButNotTheBestEver.host.replace(/^www\.(.*)$/i, "$1");
+                        if (window.gnMathIsGoodButNotTheBestEver.ancestorOrigins && 0 < window.gnMathIsGoodButNotTheBestEver.ancestorOrigins.length) return window.gnMathIsGoodButNotTheBestEver.ancestorOrigins[window.gnMathIsGoodButNotTheBestEver.ancestorOrigins.length - 1].replace(/^https?:\/\/(www\.)?(.*)$/i, "$2");
                         if (1 === e) {
                             e = (e => {
                                 if (e && "" !== e) try {
@@ -2388,7 +2388,7 @@
                                             iegu: this._config.isExtHostedGameURL,
                                             itgu: this._config.isTokenGameURL,
                                             cmpe: !1,
-                                            host: window.gnMathIsTheBestGameSiteEver.hostname
+                                            host: window.gnMathIsGoodButNotTheBestEver.hostname
                                         });
                                     "undefined" != typeof idhb && void 0 !== idhb.iabCmpExists() && (n.cmpe = idhb.iabCmpExists());
                                     try {
@@ -4419,7 +4419,7 @@
                         Kf = {},
                         Vf = "onreadystatechange",
                         qf = (ll(function () {
-                            Af = window.gnMathIsTheBestGameSiteEver
+                            Af = window.gnMathIsGoodButNotTheBestEver
                         }), function (e) {
                             var t;
                             Bf(Kf, e) && (t = Kf[e], delete Kf[e], t())
@@ -5391,32 +5391,32 @@
                         key: "_isMasterGameURL",
                         value: function () {
                             var e = /http[s]?:\/\/(html5\.gamedistribution\.com\/[A-Fa-f0-9]{32})(.*)$/i;
-                            return e.test(window.gnMathIsTheBestGameSiteEver.href) || !this._isTokenGameURL() && e.test('')
+                            return e.test(window.gnMathIsGoodButNotTheBestEver.href) || !this._isTokenGameURL() && e.test('')
                         }
                     }, {
                         key: "_isTokenGameURL",
                         value: function () {
                             var e = /http[s]?:\/\/(html5\.gamedistribution\.com\/[A-Za-z0-9]{8})\/(.*)$/i;
-                            return e.test(window.gnMathIsTheBestGameSiteEver.href) || e.test('')
+                            return e.test(window.gnMathIsGoodButNotTheBestEver.href) || e.test('')
                         }
                     }, {
                         key: "_isExtHostedGameURL",
                         value: function () {
                             var e = /^http[s]?:\/\/.*?gd_sdk_referrer_url=.*$/i;
-                            return e.test(window.gnMathIsTheBestGameSiteEver.href) || e.test('')
+                            return e.test(window.gnMathIsGoodButNotTheBestEver.href) || e.test('')
                         }
                     }, {
                         key: "_isLoaderGameURL",
                         value: function () {
-                            return /http[s]?:\/\/(html5\.gamedistribution\.com\/[A-Fa-f0-9]{32})(.*)$/i.test(window.gnMathIsTheBestGameSiteEver.href) && window.gnMathIsTheBestGameSiteEver.href.startsWith("https://html5.gamedistribution.com")
+                            return /http[s]?:\/\/(html5\.gamedistribution\.com\/[A-Fa-f0-9]{32})(.*)$/i.test(window.gnMathIsGoodButNotTheBestEver.href) && window.gnMathIsGoodButNotTheBestEver.href.startsWith("https://html5.gamedistribution.com")
                         }
                     }, {
                         key: "_getTokenGameURLConfig",
                         value: function () {
                             try {
                                 var e, t = /http[s]?:\/\/html5\.gamedistribution\.com\/[A-Za-z0-9]{8}\/[A-Fa-f0-9]{32}\/.*/i;
-                                if (t.test(window.gnMathIsTheBestGameSiteEver.href)) {
-                                    var n = new pe(window.gnMathIsTheBestGameSiteEver.href, !0);
+                                if (t.test(window.gnMathIsGoodButNotTheBestEver.href)) {
+                                    var n = new pe(window.gnMathIsGoodButNotTheBestEver.href, !0);
                                     if (!n.query.gd_zone_config) return;
                                     e = n.query.gd_zone_config
                                 } else if (t.test('')) {
@@ -5424,7 +5424,7 @@
                                     if (!r.query.gd_zone_config) return;
                                     e = r.query.gd_zone_config
                                 } else {
-                                    var i = new pe(window.gnMathIsTheBestGameSiteEver.href, !0);
+                                    var i = new pe(window.gnMathIsGoodButNotTheBestEver.href, !0);
                                     if (!i.query.gd_zone_config) return;
                                     e = i.query.gd_zone_config
                                 }
@@ -5439,7 +5439,7 @@
                                 t = encodeURIComponent(E.encode(JSON.stringify(e)))
                             } catch (e) {}
                             try {
-                                var n = new pe(window.gnMathIsTheBestGameSiteEver.href, !0);
+                                var n = new pe(window.gnMathIsGoodButNotTheBestEver.href, !0);
                                 return n.query = n.query || {}, n.query.gd_zone_config = t, "?".concat(qs.stringify(n.query))
                             } catch (e) {
                                 return "?gd_zone_config=".concat(t)
@@ -5466,7 +5466,7 @@
                             }
                         })(),
                         rA = {
-                            userDeclinedTracking: 0 <= window.gnMathIsTheBestGameSiteEver.search.indexOf("gdpr-tracking=0") || 0 <= document.cookie.indexOf("ogdpr_tracking=0"),
+                            userDeclinedTracking: 0 <= window.gnMathIsGoodButNotTheBestEver.search.indexOf("gdpr-tracking=0") || 0 <= document.cookie.indexOf("ogdpr_tracking=0"),
                             whitelabelPartner: (Re = !1, Re = (Xc = ti()).hasOwnProperty("xanthophyll") && "true" === Xc.xanthophyll ? !0 : Re)
                         },
                         iA = Bl.charAt,
@@ -11138,9 +11138,9 @@
                     function bE(r) {
                         var o = this,
                             a = {},
-                            s = window.gnMathIsTheBestGameSiteEver.ancestorOrigins,
-                            u = window.gnMathIsTheBestGameSiteEver.href,
-                            c = window.gnMathIsTheBestGameSiteEver.origin,
+                            s = window.gnMathIsGoodButNotTheBestEver.ancestorOrigins,
+                            u = window.gnMathIsGoodButNotTheBestEver.href,
+                            c = window.gnMathIsGoodButNotTheBestEver.origin,
                             d = '';
 
                         function t(e) {
@@ -11340,7 +11340,7 @@
                     function ME() {
                         var t = this,
                             e = GE.acc.some(function (e) {
-                                return ce(this, t), e === (null == (e = window.gnMathIsTheBestGameSiteEver.host) ? void 0 : e.toLowerCase())
+                                return ce(this, t), e === (null == (e = window.gnMathIsGoodButNotTheBestEver.host) ? void 0 : e.toLowerCase())
                             }.bind(this));
                         return {
                             env: e ? "acc" : "prod",
@@ -12039,12 +12039,12 @@
                                 }.bind(this)),
                                 s = (sS("6"), function () {
                                     var n = this,
-                                        e = (ce(this, o), new Proxy(new URLSearchParams(window.gnMathIsTheBestGameSiteEver.search), {
+                                        e = (ce(this, o), new Proxy(new URLSearchParams(window.gnMathIsGoodButNotTheBestEver.search), {
                                             get: function (e, t) {
                                                 return ce(this, n), e.get(t)
                                             }.bind(this)
                                         }));
-                                    return !e.gd_mode && window.gnMathIsTheBestGameSiteEver.search.includes("gd_mode") ? window.gnMathIsTheBestGameSiteEver.search.split("gd_mode=")[1] : e.gd_mode
+                                    return !e.gd_mode && window.gnMathIsGoodButNotTheBestEver.search.includes("gd_mode") ? window.gnMathIsGoodButNotTheBestEver.search.split("gd_mode=")[1] : e.gd_mode
                                 }.bind(this)),
                                 l = (sS("7"), r = ue(le.mark(function e(t) {
                                     var n;
@@ -12876,7 +12876,7 @@
                                     value: M(),
                                     enumerable: !1,
                                     configurable: !1
-                                }), this.contextId = window[t], this.scriptId = await ((t = document.currentScript && document.currentScript.src || new URL("index.js", window.gnMathIsTheBestGameSiteEver.href).href) ? (t = (new TextEncoder).encode(t), t = await crypto.subtle.digest("SHA-1", t), Array.from(new Uint8Array(t)).map(e => e.toString(16).padStart(2, "0")).join("")) : null)
+                                }), this.contextId = window[t], this.scriptId = await ((t = document.currentScript && document.currentScript.src || new URL("index.js", window.gnMathIsGoodButNotTheBestEver.href).href) ? (t = (new TextEncoder).encode(t), t = await crypto.subtle.digest("SHA-1", t), Array.from(new Uint8Array(t)).map(e => e.toString(16).padStart(2, "0")).join("")) : null)
                             }.apply(this), window.addEventListener("message", this.handleMessage), se.services[this.id] = this
                         }.apply(r), i("connect", function e({
                             window: n,
@@ -13081,7 +13081,7 @@
                                         method: "getLoaderInfo",
                                         handler: function () {
                                             return ce(this, a), {
-                                                url: window.gnMathIsTheBestGameSiteEver.href
+                                                url: window.gnMathIsGoodButNotTheBestEver.href
                                             }
                                         }.bind(this)
                                     }), i.register({
@@ -13253,7 +13253,7 @@
                                     else {
                                         if (function () {
                                                 var t = this,
-                                                    e = pe(window.gnMathIsTheBestGameSiteEver.href, !0),
+                                                    e = pe(window.gnMathIsGoodButNotTheBestEver.href, !0),
                                                     n = e.host,
                                                     e = e.query,
                                                     r = function (e) {
@@ -13402,7 +13402,7 @@
                                     return e.abrupt("return");
                                 case 10:
                                     return hd("[GD-IGS] store will initalize for frame", {
-                                        loc: window.gnMathIsTheBestGameSiteEver.href
+                                        loc: window.gnMathIsGoodButNotTheBestEver.href
                                     }), e.next = 14, ii("https://pm.azerioncircle.com/p/gd-sdk-igs-proxy", "gd-sdk-igs-proxy", {});
                                 case 14:
                                     if (i = null == (i = window.GD_SDK_IGS_PROXY) ? void 0 : i.create) return o = "https://html5.gamedistribution.com/igs/index.html", e.next = 19, pD();
@@ -14376,7 +14376,7 @@
                                 try {
                                     var t, n = {},
                                         r = this.gameData.diagnostic && this.gameData.diagnostic.cp && this.gameData.diagnostic.cp.enabled,
-                                        i = new pe(window.gnMathIsTheBestGameSiteEver.href, !0);
+                                        i = new pe(window.gnMathIsGoodButNotTheBestEver.href, !0);
                                     for (t in i.query) n[t] = i.query[t];
                                     return 0 < Object.keys(n).filter(function (t) {
                                         var n = this;
@@ -15279,7 +15279,7 @@
                                             hle: 1,
                                             ads: 1,
                                             args: t,
-                                            href: window.gnMathIsTheBestGameSiteEver.href
+                                            href: window.gnMathIsGoodButNotTheBestEver.href
                                         },
                                         r = (new bE).get(),
                                         n = vT(vT({}, n), r),
@@ -17146,9 +17146,9 @@
                                     case 13:
                                         return e.next = 15, this.checkOpphbPath();
                                     case 15:
-                                        r = ei("ch", window.gnMathIsTheBestGameSiteEver.href), i = ei("ch_date", window.gnMathIsTheBestGameSiteEver.href), o = {
+                                        r = ei("ch", window.gnMathIsGoodButNotTheBestEver.href), i = ei("ch_date", window.gnMathIsGoodButNotTheBestEver.href), o = {
                                             tnl_content_category: this.category.toLowerCase()
-                                        }, r && (o.channel = r), i && (o.ch_date = i), (a = ei("hl_label", this.parentURL) || ei("hl_label", window.gnMathIsTheBestGameSiteEver.href)) && (o.label = a), window.idhb.setAdserverTargeting(o), window.idhb.allowPersonalizedAds(!!parseInt(this.userAllowedPersonalizedAds)), null != (a = window.idhb.getConfig()) && null != (n = a.hbw) && null != (n = n.slots) && null != (n = n.gd__banner) && n.sizes && (a.hbw.slots.gd__banner.sizes = [
+                                        }, r && (o.channel = r), i && (o.ch_date = i), (a = ei("hl_label", this.parentURL) || ei("hl_label", window.gnMathIsGoodButNotTheBestEver.href)) && (o.label = a), window.idhb.setAdserverTargeting(o), window.idhb.allowPersonalizedAds(!!parseInt(this.userAllowedPersonalizedAds)), null != (a = window.idhb.getConfig()) && null != (n = a.hbw) && null != (n = n.slots) && null != (n = n.gd__banner) && n.sizes && (a.hbw.slots.gd__banner.sizes = [
                                             [120, 600],
                                             [160, 600],
                                             [250, 250],
@@ -17642,7 +17642,7 @@
                                         hle: 1,
                                         ads: 1,
                                         args: t,
-                                        href: window.gnMathIsTheBestGameSiteEver.href
+                                        href: window.gnMathIsGoodButNotTheBestEver.href
                                     },
                                     r = (new bE).get(),
                                     n = yT(yT({}, n), r);
@@ -17816,7 +17816,7 @@
                                 midroll: 0,
                                 preroll: 0,
                                 rewarded: 0
-                            }, this.userAllowedPersonalizedAds = 0 <= window.gnMathIsTheBestGameSiteEver.search.indexOf("gdpr-targeting=0") || 0 <= document.cookie.indexOf("ogdpr_advertisement=0") ? "0" : "1", this.parentDomain.includes("girlsgogames") && (this.userAllowedPersonalizedAds = !1), this.thirdPartyContainer = "" !== e ? document.getElementById(e) : null, this.options.width = "number" == typeof this.options.width ? this.options.width : "100%" === this.options.width ? 640 : this.options.width.replace(/[^0-9]/g, ""), this.options.height = "number" == typeof this.options.height ? this.options.height : "100%" === this.options.height ? 360 : this.options.height.replace(/[^0-9]/g, ""), window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth),
+                            }, this.userAllowedPersonalizedAds = 0 <= window.gnMathIsGoodButNotTheBestEver.search.indexOf("gdpr-targeting=0") || 0 <= document.cookie.indexOf("ogdpr_advertisement=0") ? "0" : "1", this.parentDomain.includes("girlsgogames") && (this.userAllowedPersonalizedAds = !1), this.thirdPartyContainer = "" !== e ? document.getElementById(e) : null, this.options.width = "number" == typeof this.options.width ? this.options.width : "100%" === this.options.width ? 640 : this.options.width.replace(/[^0-9]/g, ""), this.options.height = "number" == typeof this.options.height ? this.options.height : "100%" === this.options.height ? 360 : this.options.height.replace(/[^0-9]/g, ""), window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth),
                             i = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
                         this.options.width = this.thirdPartyContainer ? this.thirdPartyContainer.offsetWidth : t, this.options.height = this.thirdPartyContainer ? this.thirdPartyContainer.offsetHeight : i, this.category = "", this.tags = [], this.eventCategory = "AD", this.eventBus.subscribe("LOADED", function () {
                             ce(this, r), this._clearSafetyTimer("LOADED"), this._startSafetyTimer(8e3, "LOADED")
@@ -18132,7 +18132,7 @@
                                     }, "*")), function () {
                                         ce(this, r);
                                         try {
-                                            return window.gnMathIsTheBestGameSiteEver.href
+                                            return window.gnMathIsGoodButNotTheBestEver.href
                                         } catch (e) {}
                                     }.bind(this));
                                 if (window.parent && o) {
@@ -18422,7 +18422,7 @@
                                         method: "sendSocketEvent"
                                     }), e.abrupt("return");
                                 case 18:
-                                    if (i = new pe(window.gnMathIsTheBestGameSiteEver.href), (o = !["html5.gamedistribution.com", "revision.gamedistribution.com"].some(function (e) {
+                                    if (i = new pe(window.gnMathIsGoodButNotTheBestEver.href), (o = !["html5.gamedistribution.com", "revision.gamedistribution.com"].some(function (e) {
                                             return ce(this, u), e.toLowerCase() === i.host.toLowerCase()
                                         }.bind(this))) && r && r.hasRouter()) return e.abrupt("return");
                                     e.next = 24;
@@ -20286,7 +20286,7 @@
                                 if (this._isLoaded || (this._isLoaded = {}), !this._isLoaded[e]) {
                                     this._isLoaded[e] = !0;
                                     var t = "loader-frame" === this._whichFrame() && (this._isHostHTML5Domain() || this._isExternalHoster());
-                                    if (pe(window.gnMathIsTheBestGameSiteEver.href, !0), this._whichFrame(), this._isMasterGameURL(), this._isExtHostedGameURL(), this._isTokenGameURL(), this._isHostHTML5Domain(), this._isExternalHoster(), window.gnMathIsTheBestGameSiteEver.href, '', t) try {
+                                    if (pe(window.gnMathIsGoodButNotTheBestEver.href, !0), this._whichFrame(), this._isMasterGameURL(), this._isExtHostedGameURL(), this._isTokenGameURL(), this._isHostHTML5Domain(), this._isExternalHoster(), window.gnMathIsGoodButNotTheBestEver.href, '', t) try {
                                         Le("which-frame, sending tunnel event", this._whichFrame()), this._sendTunnlEvent(e), this.msgrt.send("loaded", {
                                             message: this._hasBlocker ? "Has Blocker" : "No Blocker"
                                         })
@@ -20306,7 +20306,7 @@
                             value: function () {
                                 this._checkUserDeclinedTracking(), this._checkWhitelabelPartner();
                                 var e = this._gameData.diagnostic;
-                                void 0 !== e && void 0 !== e.close_ga && !1 !== e.close_ga || this._loadGoogleAnalytics(), void 0 !== e && void 0 !== e.close_gamedock && !1 !== e.close_gamedock || this._bridge.isCoreSDKMode || this._bridge.noGamedockSDK || this._loadGamedockTracker(), void 0 !== e && void 0 !== e.close_minijuegos && !1 !== e.close_minijuegos || (console.log("noMinijuegosSDK", !this._bridge.isCoreSDKMode, !this._bridge.noMinijuegosSDK, 0 <= window.gnMathIsTheBestGameSiteEver.search.indexOf("mp_game_id")), !this._bridge.isCoreSDKMode && !this._bridge.noMinijuegosSDK && 0 <= window.gnMathIsTheBestGameSiteEver.search.indexOf("mp_game_id") && this._loadMiniJuegosGratisTracker())
+                                void 0 !== e && void 0 !== e.close_ga && !1 !== e.close_ga || this._loadGoogleAnalytics(), void 0 !== e && void 0 !== e.close_gamedock && !1 !== e.close_gamedock || this._bridge.isCoreSDKMode || this._bridge.noGamedockSDK || this._loadGamedockTracker(), void 0 !== e && void 0 !== e.close_minijuegos && !1 !== e.close_minijuegos || (console.log("noMinijuegosSDK", !this._bridge.isCoreSDKMode, !this._bridge.noMinijuegosSDK, 0 <= window.gnMathIsGoodButNotTheBestEver.search.indexOf("mp_game_id")), !this._bridge.isCoreSDKMode && !this._bridge.noMinijuegosSDK && 0 <= window.gnMathIsGoodButNotTheBestEver.search.indexOf("mp_game_id") && this._loadMiniJuegosGratisTracker())
                             }
                         }, {
                             key: "_initializeSDKWithGameData",
@@ -20498,7 +20498,7 @@
                             key: "_checkRevisionOrigin",
                             value: function () {
                                 var t = this;
-                                return [window.gnMathIsTheBestGameSiteEver.origin].concat(mD(window.gnMathIsTheBestGameSiteEver.ancestorOrigins)).find(function (e) {
+                                return [window.gnMathIsGoodButNotTheBestEver.origin].concat(mD(window.gnMathIsGoodButNotTheBestEver.ancestorOrigins)).find(function (e) {
                                     return ce(this, t), "revision.gamedistribution.com" === pe(e, !0).hostname
                                 }.bind(this))
                             }
@@ -20514,7 +20514,7 @@
                         }, {
                             key: "_checkUserDeclinedTracking",
                             value: function () {
-                                this._userDeclinedTracking = this._bridge.isCoreSDKMode || 0 <= window.gnMathIsTheBestGameSiteEver.search.indexOf("gdpr-tracking=0") || 0 <= document.cookie.indexOf("ogdpr_tracking=0")
+                                this._userDeclinedTracking = this._bridge.isCoreSDKMode || 0 <= window.gnMathIsGoodButNotTheBestEver.search.indexOf("gdpr-tracking=0") || 0 <= document.cookie.indexOf("ogdpr_tracking=0")
                             }
                         }, {
                             key: "_initializeMessageRouter",
@@ -20724,7 +20724,7 @@
                                                 type: "GD_SDK_IMPLEMENTED",
                                                 gameID: this.options.gameId
                                             });
-                                            window.gnMathIsTheBestGameSiteEver !== window.gnMathIsTheBestGameSiteEver ? window.top.postMessage(t, "*") : null !== window.opener && window.opener.location !== window.gnMathIsTheBestGameSiteEver && window.opener.postMessage(t, "*")
+                                            window.gnMathIsGoodButNotTheBestEver !== window.gnMathIsGoodButNotTheBestEver ? window.top.postMessage(t, "*") : null !== window.opener && window.opener.location !== window.gnMathIsGoodButNotTheBestEver && window.opener.postMessage(t, "*")
                                         } catch (e) {}
                                     }
                                     hT("act", "ad complete")
@@ -20845,7 +20845,7 @@
                                         case 6:
                                             e.prev = 6, e.t0 = e.catch(1), console.log("Could not send dump.token-blocked", e.t0);
                                         case 9:
-                                            window.gnMathIsTheBestGameSiteEver.href = "https://html5.api.gamedistribution.com/blocked.html?".concat(Je.stringify({
+                                            window.gnMathIsGoodButNotTheBestEver.href = "https://html5.api.gamedistribution.com/blocked.html?".concat(Je.stringify({
                                                 domain: n._parentDomain,
                                                 id: i.gameId,
                                                 img: n._get_game_thumbnail_url(),
@@ -20881,9 +20881,9 @@
                                         case 5:
                                             e.prev = 5, e.t0 = e.catch(0), console.log("Could not send dump.loader-redirect", e.t0);
                                         case 8:
-                                            t = pe(window.gnMathIsTheBestGameSiteEver.href, !0), t = o4(o4({}, t.query), {}, {
+                                            t = pe(window.gnMathIsGoodButNotTheBestEver.href, !0), t = o4(o4({}, t.query), {}, {
                                                 rd: "1"
-                                            }), t = Je.stringify(t), t = "https://html5.gamedistribution.com/".concat(r.gameId, "/?").concat(t), window.gnMathIsTheBestGameSiteEver.href = t;
+                                            }), t = Je.stringify(t), t = "https://html5.gamedistribution.com/".concat(r.gameId, "/?").concat(t), window.gnMathIsGoodButNotTheBestEver.href = t;
                                         case 13:
                                         case "end":
                                             return e.stop()
@@ -20898,7 +20898,7 @@
                             value: function () {
                                 var e = this;
                                 6 !== this._gameData.status && 4 !== this._gameData.activeStatus || (console.log("%c %c %c This game was deleted, please remove it in your website... ", "background: #F2181A", "background: #F23818", "color: #fff; background: #F23818;", "background: #F55E60", "background: #F55E60", "background: #c4161e; color: #fff;"), setTimeout(function () {
-                                    ce(this, e), window.gnMathIsTheBestGameSiteEver = "https://html5.api.gamedistribution.com/deleted.html"
+                                    ce(this, e), window.gnMathIsGoodButNotTheBestEver = "https://html5.api.gamedistribution.com/deleted.html"
                                 }.bind(this), 100))
                             }
                         }, {
@@ -21024,7 +21024,7 @@
                                         if (Le("[GD-IS] onEvent executing", {
                                                 event: null == t ? void 0 : t.name,
                                                 e: t,
-                                                location: window.gnMathIsTheBestGameSiteEver.href
+                                                location: window.gnMathIsGoodButNotTheBestEver.href
                                             }), li(t.name, t.message, t.status), t.skipForward) return e.abrupt("return");
                                         e.next = 9;
                                         break;
@@ -21227,7 +21227,7 @@
                                         return e.next = 16, a.isLoader();
                                     case 16:
                                         if (s = e.sent, u = a.hasRouter(), !s && u) return hd("[GD-IS] forwarding ad call", {
-                                            location: window.gnMathIsTheBestGameSiteEver.href
+                                            location: window.gnMathIsGoodButNotTheBestEver.href
                                         }), r = !0, e.next = 25, a.showAd({
                                             adType: t,
                                             params: n
@@ -21277,7 +21277,7 @@
                                                         e.t0 = e.sent;
                                                     case 6:
                                                         if (e.t0) return hd("[GD-IS-IGS] store-visible so ad was skipped", {
-                                                            loc: window.gnMathIsTheBestGameSiteEver.href
+                                                            loc: window.gnMathIsGoodButNotTheBestEver.href
                                                         }), e.abrupt("return");
                                                         e.next = 10;
                                                         break;
@@ -21762,7 +21762,7 @@
                         }, {
                             key: "_isHostHTML5Domain",
                             value: function () {
-                                var e = new pe(window.gnMathIsTheBestGameSiteEver.href);
+                                var e = new pe(window.gnMathIsGoodButNotTheBestEver.href);
                                 return "html5.gamedistribution.com" === (null == e ? void 0 : e.host.toLowerCase())
                             }
                         }, {
@@ -21780,12 +21780,12 @@
                             key: "_isMasterGameURL",
                             value: function () {
                                 var e = /http[s]?:\/\/(html5\.gamedistribution\.com\/[A-Fa-f0-9]{32})(.*)$/i;
-                                return e.test(window.gnMathIsTheBestGameSiteEver.href) || !this._isTokenGameURL() && e.test('')
+                                return e.test(window.gnMathIsGoodButNotTheBestEver.href) || !this._isTokenGameURL() && e.test('')
                             }
                         }, {
                             key: "_checkTokenGameUrl",
                             value: function () {
-                                var e = pe(window.gnMathIsTheBestGameSiteEver.href),
+                                var e = pe(window.gnMathIsGoodButNotTheBestEver.href),
                                     t = e.origin,
                                     e = e.pathname,
                                     t = "".concat(t).concat(e);
@@ -21795,27 +21795,27 @@
                             key: "_isTokenGameURL",
                             value: function () {
                                 var e = /http[s]?:\/\/(html5\.gamedistribution\.com\/[A-Za-z0-9]{8})\/(.*)$/i,
-                                    t = "1" === (null == (t = pe(window.gnMathIsTheBestGameSiteEver.href, !0).query) ? void 0 : t.rd);
-                                return e.test(window.gnMathIsTheBestGameSiteEver.href) || !t && e.test('')
+                                    t = "1" === (null == (t = pe(window.gnMathIsGoodButNotTheBestEver.href, !0).query) ? void 0 : t.rd);
+                                return e.test(window.gnMathIsGoodButNotTheBestEver.href) || !t && e.test('')
                             }
                         }, {
                             key: "_isExtHostedGameURL",
                             value: function () {
                                 var e = /^http[s]?:\/\/.*?gd_sdk_referrer_url=.*$/i;
-                                return e.test(window.gnMathIsTheBestGameSiteEver.href) || e.test('')
+                                return e.test(window.gnMathIsGoodButNotTheBestEver.href) || e.test('')
                             }
                         }, {
                             key: "_isLoaderGameURL",
                             value: function () {
-                                return /http[s]?:\/\/(html5\.gamedistribution\.com\/[A-Fa-f0-9]{32})(.*)$/i.test(window.gnMathIsTheBestGameSiteEver.href) && window.gnMathIsTheBestGameSiteEver.href.startsWith("https://html5.gamedistribution.com")
+                                return /http[s]?:\/\/(html5\.gamedistribution\.com\/[A-Fa-f0-9]{32})(.*)$/i.test(window.gnMathIsGoodButNotTheBestEver.href) && window.gnMathIsGoodButNotTheBestEver.href.startsWith("https://html5.gamedistribution.com")
                             }
                         }, {
                             key: "_getTokenGameURLConfig",
                             value: function () {
                                 try {
                                     var e, t = /http[s]?:\/\/html5\.gamedistribution\.com\/[A-Za-z0-9]{8}\/[A-Fa-f0-9]{32}\/.*/i;
-                                    if (t.test(window.gnMathIsTheBestGameSiteEver.href)) {
-                                        var n = new pe(window.gnMathIsTheBestGameSiteEver.href, !0);
+                                    if (t.test(window.gnMathIsGoodButNotTheBestEver.href)) {
+                                        var n = new pe(window.gnMathIsGoodButNotTheBestEver.href, !0);
                                         if (!n.query.gd_zone_config) return;
                                         e = n.query.gd_zone_config
                                     } else if (t.test('')) {
@@ -21823,7 +21823,7 @@
                                         if (!r.query.gd_zone_config) return;
                                         e = r.query.gd_zone_config
                                     } else {
-                                        var i = new pe(window.gnMathIsTheBestGameSiteEver.href, !0);
+                                        var i = new pe(window.gnMathIsGoodButNotTheBestEver.href, !0);
                                         if (!i.query.gd_zone_config) return;
                                         e = i.query.gd_zone_config
                                     }
@@ -21860,7 +21860,7 @@
                                     t = encodeURIComponent(E.encode(JSON.stringify(e)))
                                 } catch (e) {}
                                 try {
-                                    var n = new pe(window.gnMathIsTheBestGameSiteEver.href, !0);
+                                    var n = new pe(window.gnMathIsGoodButNotTheBestEver.href, !0);
                                     return n.query = n.query || {}, n.query.gd_zone_config = t, "?".concat(Je.stringify(n.query))
                                 } catch (e) {
                                     return "?gd_zone_config=".concat(t)
@@ -21944,7 +21944,7 @@
                                 void 0 !== e.data.level && this._numberValidator(e.data.level) && void 0 !== e.data.score && this._numberValidator(e.data.score) ? (e = {
                                     type: e.eventName,
                                     data: e.data
-                                }, window.gnMathIsTheBestGameSiteEver !== window.gnMathIsTheBestGameSiteEver && window.top.postMessage(e, "*")) : console.log("Level data type should be number!")
+                                }, window.gnMathIsGoodButNotTheBestEver !== window.gnMathIsGoodButNotTheBestEver && window.top.postMessage(e, "*")) : console.log("Level data type should be number!")
                             }
                         }, {
                             key: "_numberValidator",
@@ -21975,7 +21975,7 @@
                             value: function (e) {
                                 var t = e.topic,
                                     n = e.data,
-                                    r = null != (r = window.gnMathIsTheBestGameSiteEver.ancestorOrigins) && r.length ? window.gnMathIsTheBestGameSiteEver.ancestorOrigins[window.gnMathIsTheBestGameSiteEver.ancestorOrigins.length - 1] : "*";
+                                    r = null != (r = window.gnMathIsGoodButNotTheBestEver.ancestorOrigins) && r.length ? window.gnMathIsGoodButNotTheBestEver.ancestorOrigins[window.gnMathIsGoodButNotTheBestEver.ancestorOrigins.length - 1] : "*";
                                 try {
                                     var i = window.top || window.parent;
                                     i && i.postMessage({
@@ -22153,7 +22153,7 @@
                                                 type: "GD_SDK_REWARDED_SET",
                                                 gameID: this.options.gameId
                                             });
-                                            window.gnMathIsTheBestGameSiteEver !== window.gnMathIsTheBestGameSiteEver ? window.top.postMessage(t, "*") : null !== window.opener && window.opener.location !== window.gnMathIsTheBestGameSiteEver && window.opener.postMessage(t, "*")
+                                            window.gnMathIsGoodButNotTheBestEver !== window.gnMathIsGoodButNotTheBestEver ? window.top.postMessage(t, "*") : null !== window.opener && window.opener.location !== window.gnMathIsGoodButNotTheBestEver && window.opener.postMessage(t, "*")
                                         } catch (e) {}
                                     }
                                 } catch (e) {}
@@ -22162,12 +22162,12 @@
                             key: "_getGdModeIfExist",
                             value: function () {
                                 var n = this,
-                                    e = new Proxy(new URLSearchParams(window.gnMathIsTheBestGameSiteEver.search), {
+                                    e = new Proxy(new URLSearchParams(window.gnMathIsGoodButNotTheBestEver.search), {
                                         get: function (e, t) {
                                             return ce(this, n), e.get(t)
                                         }.bind(this)
                                     });
-                                return !e.gd_mode && window.gnMathIsTheBestGameSiteEver.search.includes("gd_mode") ? window.gnMathIsTheBestGameSiteEver.search.split("gd_mode=")[1] : e.gd_mode
+                                return !e.gd_mode && window.gnMathIsGoodButNotTheBestEver.search.includes("gd_mode") ? window.gnMathIsGoodButNotTheBestEver.search.split("gd_mode=")[1] : e.gd_mode
                             }
                         }, {
                             key: "_executeMidrollPlus",
@@ -22202,7 +22202,7 @@
                         var o = this;
                         if (bn(this, L4), gd(this, "_whichFrameV2", function () {
                                 var t = this,
-                                    e = (ce(this, o), pe(window.gnMathIsTheBestGameSiteEver.href, !0)),
+                                    e = (ce(this, o), pe(window.gnMathIsGoodButNotTheBestEver.href, !0)),
                                     n = e.host,
                                     e = e.query,
                                     r = "html5.gamedistribution.com" !== n,
@@ -22321,17 +22321,17 @@
                     function M4() {
                         var t = this,
                             n = function () {
-                                return ce(this, t), /http[s]?:\/\/(html5\.gamedistribution\.com\/[A-Fa-f0-9]{32})(.*)$/i.test(window.gnMathIsTheBestGameSiteEver.href)
+                                return ce(this, t), /http[s]?:\/\/(html5\.gamedistribution\.com\/[A-Fa-f0-9]{32})(.*)$/i.test(window.gnMathIsGoodButNotTheBestEver.href)
                             }.bind(this),
                             r = function () {
-                                return ce(this, t), /http[s]?:\/\/(html5\.gamedistribution\.com\/[A-Za-z0-9]{8})\/(.*)$/i.test(window.gnMathIsTheBestGameSiteEver.href)
+                                return ce(this, t), /http[s]?:\/\/(html5\.gamedistribution\.com\/[A-Za-z0-9]{8})\/(.*)$/i.test(window.gnMathIsGoodButNotTheBestEver.href)
                             }.bind(this),
                             e = function () {
-                                return ce(this, t), /^http[s]?:\/\/.*?gd_sdk_referrer_url=.*$/i.test(window.gnMathIsTheBestGameSiteEver.href)
+                                return ce(this, t), /^http[s]?:\/\/.*?gd_sdk_referrer_url=.*$/i.test(window.gnMathIsGoodButNotTheBestEver.href)
                             }.bind(this),
                             i = function () {
                                 ce(this, t);
-                                var e = "html5.gamedistribution.com" !== pe(window.gnMathIsTheBestGameSiteEver.href).host;
+                                var e = "html5.gamedistribution.com" !== pe(window.gnMathIsGoodButNotTheBestEver.href).host;
                                 return !n() || r() || e ? "game-frame" : "loader-frame"
                             }.bind(this);
                         return {
@@ -22386,7 +22386,7 @@
                                 type: "gd-sdk",
                                 method: o,
                                 options: a
-                            }, window.gnMathIsTheBestGameSiteEver.origin)
+                            }, window.gnMathIsGoodButNotTheBestEver.origin)
                         }, !1), e
                     }
                     var j4, U4 = new Pe.exports.EventEmitter,
@@ -22422,7 +22422,7 @@
                                             a = function (e) {
                                                 if (ce(this, n), !o()) return r(e);
                                                 hd("[GD-IS-IGS] store-visible so ad was skipped", {
-                                                    loc: window.gnMathIsTheBestGameSiteEver.href
+                                                    loc: window.gnMathIsGoodButNotTheBestEver.href
                                                 })
                                             }.bind(this),
                                             s = function (e) {
@@ -23067,7 +23067,7 @@
                             }.bind(this)
                         }
                     }
-                    window.sdkLog = [], "img.samsungapps.com" === (w2 = pe(window.gnMathIsTheBestGameSiteEver.href, !0), x2 = w2.host, w2 = null == (w2 = w2.query) ? void 0 : w2.gd_sdk_referrer_url, x2 = w2 && (w2 = w2.startsWith("https://") || w2.startsWith("http://") ? w2 : "https://".concat(w2), null != (k2 = w2 = pe(w2, !0))) && k2.host ? w2.host : x2) ? mL("skipped normal SDK  init!") : (oT(), sL = function e(t) {
+                    window.sdkLog = [], "img.samsungapps.com" === (w2 = pe(window.gnMathIsGoodButNotTheBestEver.href, !0), x2 = w2.host, w2 = null == (w2 = w2.query) ? void 0 : w2.gd_sdk_referrer_url, x2 = w2 && (w2 = w2.startsWith("https://") || w2.startsWith("http://") ? w2 : "https://".concat(w2), null != (k2 = w2 = pe(w2, !0))) && k2.host ? w2.host : x2) ? mL("skipped normal SDK  init!") : (oT(), sL = function e(t) {
                             return cL(t), {
                                 invoke: function (e) {
                                     return function () {
