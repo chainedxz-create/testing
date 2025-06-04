@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<link href='menu.css' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+
+		<div id="canvas_container" style="display:none">
+
+			<canvas id="screen"></canvas>
+
+			<div id="play" class="button" onclick="startGame()">PLAY</div>
+
+			<div id="fund" class="button" onclick="window.location.hash='fund'">SUPPORT & SHARE</div>
+			<div id="uncopyright" class="button" onclick="window.location.hash='uncopyright'">UNCOPYRIGHT</div>
+			<div id="credits" class="button" onclick="window.location.hash='credits'">CREDITS</div>
+
+		</div>
+
+		<div id="modal_container" shown="false">
+			<div id="modal_container_bg" onclick="hideModal()"></div>
+			<div id="modal_container_content">
+
+				<div class="dialog" id="dialog_fund"> <!-- or, the end? -->
+					<h1>THANK YOU FOR PLAYING THIS DEMO!</h1>
+
+					<span>[This project is long dead, sorry!
+						<a target="_blank" href="https://web.archive.org/web/20190913052311/https://us3.campaign-archive.com/?u=dfc6ed35d0a2933c059395987&id=47e5a7480f">Post-mortem here</a>
+					</span>
+					<br>
+
+				</div>
+				<div class="dialog" id="dialog_uncopyright">
+					<h1>NOTHING TO HIDE HAS NOTHING TO HIDE</h1>
+
+					This project <a target="_blank" href="https://web.archive.org/web/20190913052311/https://us3.campaign-archive.com/?u=dfc6ed35d0a2933c059395987&id=47e5a7480f">is dead</a>,
+					but the
+					<a href="https://github.com/ncase/nothing-to-hide" target="_blank">the open source code</a> lives on!
+
+					<br><br>
+
+					You're totally welcome to:
+					<br>
+					<span>
+						- "Pirate" this game.
+						<br>
+						- Record and monetize Let's Plays.
+						<br>
+						- Re-host this game on your website.
+						<br>
+						- Use the art/music/code in your own projects.
+						<br>
+						- Make a mod where the main character is replaced with Princess Luna from the
+						hit cartoon show, My Little Pony: Friendship Is Magic.
+						Well, actually, you'll probably get a cease and desist from Hasbro for that.
+						But not from me.
+					</span>
+					<br><br>
+
+					By giving up "power" over our art, our art can have more power.
+
+				</div>
+				<div class="dialog" id="dialog_credits">
+
+					<h1>WITH THE HELP OF HUNDREDS</h1>
+
+					<a href="https://twitter.com/ncasenmare" target="_blank">NCASE</a> - Developer, designer, artist
+					<br>
+					<a href="https://www.facebook.com/HalcyonicFalconX" target="_blank">HalcyonicFalconX</a> - Musician
+					<br>
+					Code libraries -
+					<a href="https://code.google.com/p/visibility-polygon-js/" target="_blank">Visibility-Polygon</a>,
+					<a href="http://createjs.com/#!/SoundJS" target="_blank">SoundJS</a>,
+					<a href="http://documentup.com/kriskowal/q/" target="_blank">Q</a>
+					<br>
+					Sound effects from Freesound.org <a href="https://gist.github.com/ncase/8936191" target="_blank">(full credits list)</a>
+					<br><br>
+
+					The Council of Feedback
+					<a href="http://tinyletter.com/nothingtohide/letters" target="_blank">(join the council)</a>
+					<br>
+					<span>
+					AustYn Burgess, Branaja, Brendan Z, Cool_Muhl, Crazyjrocks, im_tw1g, Jackson Powell,
+					Jaimie Zhang, John Polson, Jonathan Gelmini, Josh Silvani, Kevin Cottam, kosciCZ,
+					Masterweaver, Miky Astor, Noah Stevens, Ryan "McRealz" McCoy, stealthonion,
+					tparadox88, Trialjet
+					</span>
+					<br><br>
+
+					Special Thanks
+					<br>
+					<span>
+						Barron Caster, for forcing me to wake up before noon
+						<br>
+						Chris Walker, for the game design advice and ponies
+						<br>
+						Dan Mills, for helping me get to know Creative Commons better
+						<br>
+						David Ascher, for helping me get to know Mozilla better
+						<br>
+						Elissa Shevinsky, for moral support and dirty jokes
+						<br>
+						Elizabeth Stark, for teaching me how to life
+						<br>
+						Ethan Levy, for being my sensei for the past three years
+						<br>
+						Justin Carden, for stopping me from literally bleeding to death
+						<br>
+						Keero Satanofthesky, for all the indie games and Breaking Bad
+						<br>
+						Nina Paley, for inspiring me to dedicate all I do to the public domain
+						<br>
+						Rin Ray, for Poppy's character design
+						<br>
+						Rio Guthrie-Honea, for helping me write the story
+						<br>
+						Tom Fulp, for supporting me early in my gamedev life
+						<br>
+						You, aww aren't I such a sweetheart.
+					</span>
+
+				</div>
+
+			</div>
+			<div id="close_button_container">
+				<div id="close_button" onclick="hideModal()">BACK TO MAIN MENU</div>
+			</div>
+		</div>
+
+		<script src="js/Q.js"></script>
+		<script src="js/soundjs-0.5.0.min.js"></script>
+		<script src="js/visibility_polygon.js"></script>
+
+		<script src="js/Asset.js"></script>
+		<script src="js/config.js"></script>
+		<script src="js/menu.js"></script>
+
+		<script src="js/Map.js"></script>
+		<script src="js/ShadowController.js"></script>
+		<script src="js/Mouse.js"></script>
+
+	</body>
+</html>
