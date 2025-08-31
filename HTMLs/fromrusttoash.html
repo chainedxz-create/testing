@@ -1,4 +1,4 @@
-﻿<html><head>
+<html><head>
 <title>PICO-8 Cartridge</title>
 <meta name="viewport" content="width=device-width, user-scalable=no">
 <script type="text/javascript">
@@ -33,8 +33,38 @@
 	pico8_gamepads.count = 0;
 
 	// When pico8_gpio is defined, reading and writing to gpio pins will read and write to these values
-	var pico8_gpio = new Array(128);
+	var pico8_gpio = new Proxy(new Array(128),{
+		// pancelor's gpio-url, https://www.lexaloffle.com/bbs/?tid=149864
+		set(arr, pin, value) {
+			// console.log(typeof pin, typeof value); // string number 0.o
+			pin = parseInt(pin,10);
+			arr[pin] = value;
 
+			// write url chars to pins 1,2...
+			// then set pin 0 to ord("u") to open the url
+			if (pin==0) {
+				var code = String.fromCharCode(value);
+				if (code=="u") {
+					// read URL (and reset pins to undefined)
+					var url = "";
+					for (var ii = 1; ii < 128; ii++) {
+						var state = arr[ii];
+						if (state==undefined) break;
+						url += String.fromCharCode(state);
+						arr[ii] = undefined;
+					}
+					arr[0] = undefined
+
+					// open
+					if (!url.startsWith("http")) url = "https://"+url;
+					console.log("opening gpio url:",url);
+					window.open(url,'_blank');
+				} else {
+					console.log("unknown gpio command:",code,arr[0]);
+				}
+			}
+		}
+	});
 	// When pico8_audio_context context is defined, the html shell (this file) is responsible for creating and managing it.
 	// This makes satisfying browser requirements easier -- e.g. initialising audio from a short script in response to a user action.
 	// Otherwise PICO-8 will try to create and use its own context.
@@ -632,7 +662,7 @@
 
 		}
 		e.type = "application/javascript";
-		e.src = "mouserequired.js";
+		e.src = "https://cdn.jsdelivr.net/gh/Stinkalistic/UGS@main/MISC/rusttoash/menu.js";
 		e.id = "e_script";
 		
 		document.body.appendChild(e); // load and run
@@ -982,7 +1012,7 @@ canvas{
 
 .p8_start_button{
 	cursor:pointer;
-	background:url("data:image/png;base64,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");
+	background:url("data:image/png;base64,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");
 	-repeat center;
 	-webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; background-size:cover;
 }
@@ -1007,7 +1037,7 @@ canvas{
 
 </head>
 
-<body style="padding:0px; margin:0px; background-color:#222; color:#ccc">
+<body style="padding:0px; margin:0px; background-color:#000000; color:#ccc">
 <div id="body_0"> <!-- hide this when playing in mobile (p8_touch_detected) so that elements don't affect layout -->
 
 
