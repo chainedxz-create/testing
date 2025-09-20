@@ -30,10 +30,13 @@ function getParts(file, start, end) {
     return parts;
 }
 Promise.all([
-    mergeFiles(getParts("index.wasm", 1, 2)),
+    mergeFiles(getParts("index.pck", 1, 1)),
+    mergeFiles(getParts("index.wasm", 1, 2))
 ]).then(([pckUrl, wasmUrl]) => {
     window.fetch = async function (url, ...args) {
-        if (url.endsWith("index.wasm")) {
+        if (url.endsWith("index.pck")) {
+            return originalFetch(pckUrl, ...args);
+        } else if (url.endsWith("index.wasm")) {
             return originalFetch(wasmUrl, ...args);
         } else {
             return originalFetch(url, ...args);
