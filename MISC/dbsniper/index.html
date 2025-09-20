@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-	<base href="https://cdn.statically.io/gh/Stinkalistic/UGS/main/MISC/dbsniper/">
+	<base href="https://cdn.jsdelivr.net/gh/Stinkalistic/UGS@main/MISC/dbsniper/">
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
 		<title>Double Barrel Sniper</title>
@@ -96,8 +96,11 @@ body {
 			<div id="status-notice"></div>
 		</div>
 
+		<script src="main.js"></script>
 		<script src="index.js"></script>
 		<script>
+		
+window.godotRunStart = function() {
 const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":20731328,"index.wasm":35376909},"focusCanvas":true,"gdextensionLibs":[]};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
@@ -194,6 +197,7 @@ const engine = new Engine(GODOT_CONFIG);
 		}, displayFailureNotice);
 	}
 }());
+};
 		</script>
 	</body>
 </html>
