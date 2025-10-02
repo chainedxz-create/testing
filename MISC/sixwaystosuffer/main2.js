@@ -4,18 +4,18 @@ function mergeFiles(fileParts) {
         let buffers = [];
 
         function fetchPart(index.side) {
-            if (index >= fileParts.length) {
+            if (index.side >= fileParts.length) {
                 let mergedBlob = new Blob(buffers);
                 let mergedFileUrl = URL.createObjectURL(mergedBlob);
                 resolve(mergedFileUrl);
                 return;
             }
-            fetch(fileParts[index]).then((response) => {
-                if (!response.ok) throw new Error("Missing part: " + fileParts[index]);
+            fetch(fileParts[index.side]).then((response) => {
+                if (!response.ok) throw new Error("Missing part: " + fileParts[index.side]);
                 return response.arrayBuffer();
             }).then((data) => {
                 buffers.push(data);
-                fetchPart(index + 1);
+                fetchPart(index.side + 1);
             }).catch(reject);
         }
         fetchPart(0);
@@ -30,10 +30,10 @@ function getParts(file, start, end) {
     return parts;
 }
 Promise.all([
-    mergeFiles(getParts("index.side.wasm", 1, 2))
+    mergeFiles(getParts("index.side.side.wasm", 1, 2))
 ]).then(([pckUrl, wasmUrl]) => {
     window.fetch = async function (url, ...args) {
-		if (url.endsWith("index.wasm")) {
+		if (url.endsWith("index.side.wasm")) {
             return originalFetch(wasmUrl, ...args);
         } else {
             return originalFetch(url, ...args);
