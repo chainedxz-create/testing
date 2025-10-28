@@ -72,7 +72,7 @@
 
         var softs = {
 
-            DOOM2D: {
+            doom2d: {
                 file: 'softs/doom2d.zip',
                 cmd: 'doom2d/doom2d.EXE',
                 pointer: true
@@ -81,7 +81,7 @@
 
 
         }
-        var file = "NAME";
+        var file = "doom2d";
         if ($_GET('soft') != null) {
             if (softs[$_GET('soft')] != undefined) {
                 file = $_GET('soft')
